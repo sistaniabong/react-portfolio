@@ -1,30 +1,25 @@
 import React, { useState } from 'react';
 import NavTabs from './Navigation';
 import Footer from './Footer';
-import Projects from './Projects';
 
-// import Home from './pages/Home';
 import About from './pages/About';
-import Project from './pages/Project';
 import Contact from './pages/Contact';
+import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('Home');
+  const [currentPage, setCurrentPage] = useState('About');
 
   const renderPage = () => {
-    // if (currentPage === 'Home') {
-    //   return <Home />;
-    // }
+    if (currentPage === 'Portfolio') {
+      return <Portfolio />;
+    }
     if (currentPage === 'About') {
       return <About />;
     }
-    if (currentPage === 'Project') {
-      return <Project />;
-    }
     if (currentPage === 'Contact') {
         return <Contact />;
-      }
+    }
     return <Resume />;
   };
 
@@ -32,8 +27,14 @@ export default function PortfolioContainer() {
 
   return (
     <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       {/* pass the currentPage and  handlepage fx to the navtabs component as props */}
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      </nav>
       {/* // run renderPage based on the current page */}
       {renderPage()}
     </div>
