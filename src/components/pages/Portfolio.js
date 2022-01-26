@@ -8,7 +8,7 @@ const card1 = {
   stack: 'MVC - Sequelize, Handlebars,Express',
   github_url: 'https://github.com/sistaniabong/justFurPets',
   url: 'https://just-fur-pets.herokuapp.com/',
-  image: "../../assets/images/justfurpets2.png",
+  image: "../../assets/justfurpets2.png",
   id: 1,
 };
 
@@ -19,7 +19,7 @@ const cards_col1 = [
     stack: 'MVC - Sequelize, Handlebars,Express',
     github_url: 'https://github.com/sistaniabong/justFurPets',
     url: 'https://just-fur-pets.herokuapp.com/',
-    image: "../../assets/images/justfurpets2.png",
+    image: "../../assets/justfurpets2.png",
     id: 1,
   },
   {
@@ -28,7 +28,7 @@ const cards_col1 = [
     stack: 'MVC - Sequelize, Handlebars,Express',
     github_url: 'https://github.com/sistaniabong/justFurPets',
     url: 'https://just-fur-pets.herokuapp.com/',
-    image: "../../assets/images/justfurpets2.png",
+    image: "../../assets/justfurpets2.png",
     id: 1,
   },
   {
@@ -37,7 +37,7 @@ const cards_col1 = [
     stack: 'MVC - Sequelize, Handlebars,Express',
     github_url: 'https://github.com/sistaniabong/justFurPets',
     url: 'https://just-fur-pets.herokuapp.com/',
-    image: "../../assets/images/justfurpets2.png",
+    image: "../../assets/justfurpets2.png",
     id: 1,
   }
 ]
@@ -49,7 +49,7 @@ const cards_col2=[
     stack: 'MVC - Sequelize, Handlebars,Express',
     github_url: 'https://github.com/sistaniabong/justFurPets',
     url: 'https://just-fur-pets.herokuapp.com/',
-    image: "../../assets/images/justfurpets2.png",
+    image: "../../assets/justfurpets2.png",
     id: 1,
   },
   {
@@ -58,7 +58,7 @@ const cards_col2=[
     stack: 'MVC - Sequelize, Handlebars,Express',
     github_url: 'https://github.com/sistaniabong/justFurPets',
     url: 'https://just-fur-pets.herokuapp.com/',
-    image: "../../assets/images/justfurpets2.png",
+    image: "../../assets/justfurpets2.png",
     id: 1,
   },
   {
@@ -67,7 +67,7 @@ const cards_col2=[
     stack: 'MVC - Sequelize, Handlebars,Express',
     github_url: 'https://github.com/sistaniabong/justFurPets',
     url: 'https://just-fur-pets.herokuapp.com/',
-    image: "../../assets/images/justfurpets2.png",
+    image: "../../assets/justfurpets2.png",
     id: 1,
   }
 ]
@@ -75,7 +75,7 @@ const cards_col2=[
 
 export default function Portfolio() {
   return (
-    <Container>
+    <Container className="vh-100 d-flex flex-column ">
       <Row xs={1} md={2} className="g-4">
           <Col>
               <Project cards={cards_col1}
