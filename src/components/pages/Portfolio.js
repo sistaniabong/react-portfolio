@@ -1,21 +1,92 @@
 import React from 'react';
+import Project from '../projects/Project';
+import { Card, Container, Row, Array, Col } from 'react-bootstrap'
+
+const card1 = {
+  heading: 'card1',
+  title: 'JustFurPets',
+  stack: 'MVC - Sequelize, Handlebars,Express',
+  github_url: 'https://github.com/sistaniabong/justFurPets',
+  url: 'https://just-fur-pets.herokuapp.com/',
+  image: "../../assets/images/justfurpets2.png",
+  id: 1,
+};
+
+const cards_col1 = [
+  {
+    heading: 'card1',
+    title: 'JustFurPets',
+    stack: 'MVC - Sequelize, Handlebars,Express',
+    github_url: 'https://github.com/sistaniabong/justFurPets',
+    url: 'https://just-fur-pets.herokuapp.com/',
+    image: "../../assets/images/justfurpets2.png",
+    id: 1,
+  },
+  {
+    heading: 'card1',
+    title: 'JustFurPets',
+    stack: 'MVC - Sequelize, Handlebars,Express',
+    github_url: 'https://github.com/sistaniabong/justFurPets',
+    url: 'https://just-fur-pets.herokuapp.com/',
+    image: "../../assets/images/justfurpets2.png",
+    id: 1,
+  },
+  {
+    heading: 'card1',
+    title: 'JustFurPets',
+    stack: 'MVC - Sequelize, Handlebars,Express',
+    github_url: 'https://github.com/sistaniabong/justFurPets',
+    url: 'https://just-fur-pets.herokuapp.com/',
+    image: "../../assets/images/justfurpets2.png",
+    id: 1,
+  }
+]
+
+const cards_col2=[
+  {
+    heading: 'card1',
+    title: 'JustFurPets',
+    stack: 'MVC - Sequelize, Handlebars,Express',
+    github_url: 'https://github.com/sistaniabong/justFurPets',
+    url: 'https://just-fur-pets.herokuapp.com/',
+    image: "../../assets/images/justfurpets2.png",
+    id: 1,
+  },
+  {
+    heading: 'card1',
+    title: 'JustFurPets',
+    stack: 'MVC - Sequelize, Handlebars,Express',
+    github_url: 'https://github.com/sistaniabong/justFurPets',
+    url: 'https://just-fur-pets.herokuapp.com/',
+    image: "../../assets/images/justfurpets2.png",
+    id: 1,
+  },
+  {
+    heading: 'card1',
+    title: 'JustFurPets',
+    stack: 'MVC - Sequelize, Handlebars,Express',
+    github_url: 'https://github.com/sistaniabong/justFurPets',
+    url: 'https://just-fur-pets.herokuapp.com/',
+    image: "../../assets/images/justfurpets2.png",
+    id: 1,
+  }
+]
+
 
 export default function Portfolio() {
   return (
-    <div>
-      <h1>Projects</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.
-      </p> 
-    </div>
+    <Container>
+      <Row xs={1} md={2} className="g-4">
+          <Col>
+              <Project cards={cards_col1}
+              />
+          </Col>
+          <Col>
+            <Project cards={cards_col2}
+                />
+          </Col>
+        
+      </Row>
+    </Container>
   );
 }
