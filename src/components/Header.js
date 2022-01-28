@@ -26,15 +26,16 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div className="header">
+    <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        {/* <a class="navbar-brand" href="#">Sistania</a> */}
+      <div class="container-fluid">
         <h1>Sistania Bong</h1>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       {/* pass the currentPage and  handlepage fx to the navtabs component as props */}
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      </div>
       </nav>
       {/* // run renderPage based on the current page */}
       {renderPage()}

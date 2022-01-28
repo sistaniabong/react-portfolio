@@ -49,9 +49,10 @@ function Form() {
   return (
     <div>
       <p>Hello there! Please fill this out to get connected.</p>
-      <form className="form">
+      <form className="flex-row justify-center justify-space-between-md align-center">
         <input
           value={name}
+          className="form-input w-100"
           name="name"
           onChange={handleInputChange}
           type="text"
@@ -59,6 +60,7 @@ function Form() {
         />
         <input
           value={email}
+          className="form-input w-100"
           name="email"
           onChange={handleInputChange}
           type="email"
@@ -66,12 +68,13 @@ function Form() {
         />
         <input
           value={message}
+          className="form-input w-100"
           name="message"
           onChange={handleInputChange}
           type="message"
           placeholder="message"
         />
-        <button type="button" onClick={handleFormSubmit}>Submit</button>
+        <button className="btn btn-primary btn-block py-3" type="button" onClick={handleFormSubmit}>Submit</button>
       </form>
       {errorMessage && (
         <div>
