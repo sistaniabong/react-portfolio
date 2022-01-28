@@ -49,11 +49,11 @@ This portfolio webpage includes:
 
 ## Mock-Up
 The following image displays the web application's appearance:
-![portfolio demo](./assets/images/portfolio.gif)
+![portfolio demo](./src/assets/react-portfolio.png)
 
 
 ## Review
 To review the refactored code, please go to the [repository](https://github.com/sistaniabong/react-portfolio)
 
 ## Deploy
-To deploy this web application, please click on this [link](https://sistaniabong.github.io/professional-portfolio/)
+To deploy this web application, please click on this [link](https://sistaniabong.github.io/react-portfolio/)
